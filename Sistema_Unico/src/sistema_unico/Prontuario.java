@@ -11,8 +11,8 @@ public class Prontuario {
     private String analise;
     private String observacao;
     private Date data;
-    private String crm_medico;
-    private String cpf_paciente;
+    Medico medico;
+    Paciente paciente;
     private int consulta;
 
     public Prontuario(int id_prontuario, String problema, String situacao, String analise, String observacao, Date data, String crm_medico, String cpf_paciente, int consulta) {
@@ -22,8 +22,6 @@ public class Prontuario {
         this.analise = analise;
         this.observacao = observacao;
         this.data = data;
-        this.crm_medico = crm_medico;
-        this.cpf_paciente = cpf_paciente;
         this.consulta = consulta;
     }
 
@@ -73,22 +71,6 @@ public class Prontuario {
 
     public void setData(Date data) {
         this.data = data;
-    }
-
-    public String getCrm_medico() {
-        return crm_medico;
-    }
-
-    public void setCrm_medico(String crm_medico) {
-        this.crm_medico = crm_medico;
-    }
-
-    public String getCpf_paciente() {
-        return cpf_paciente;
-    }
-
-    public void setCpf_paciente(String cpf_paciente) {
-        this.cpf_paciente = cpf_paciente;
     }
 
     public int getConsulta() {
